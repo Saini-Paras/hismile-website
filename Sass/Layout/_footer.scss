@@ -1,0 +1,119 @@
+.footer{
+
+    &__email{
+        text-align: center;
+        position: relative;
+        padding:0 0  9rem 0;
+    }
+    &__input{
+        border: none;
+        border-bottom: 1px solid $grey;
+        width: 43rem;
+        padding: 1.5rem .5rem;
+        background-color: $main-bg-color;
+        position: relative;
+        text-align: left;
+        font-size: 1.5rem;
+
+        &::placeholder{
+            color: $grey;
+            
+        }
+        &:focus{
+            outline: none;
+            color: $grey;
+
+        }
+       
+    }
+
+    // main
+
+    &__main{
+        border-bottom: 1px solid $grey;
+        padding: 8rem 0rem 6rem 0rem;
+        margin: 0 auto  ;
+        display: flex;    
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &-list{
+        list-style: none;
+        // border: 2px solid;
+        }
+
+        &-item{
+            h3{
+                font-size: 1.4rem;
+            }
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-link{
+           
+            &:link,&:visited{
+            color: $black;
+            font-size: 1.3rem;
+            text-decoration: none;
+            padding: .5rem 0;
+            transition: color .1s;
+            }
+            &:hover,&:active{
+                color: $grey;
+            }
+        }
+
+        &-link-underline{
+            &:link,&:visited{
+            text-decoration: underline;
+            }
+        }
+
+        &-para{
+            color:$grey ;
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+        
+    }
+
+    // social icons
+    &__social-icons{
+        a{
+            &:link,&:visited{
+            text-decoration: none;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+        }
+        img{
+            width: 2rem;
+           
+        }
+    }
+
+
+    // payment
+
+    &__payment{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    &__icons{
+        display: flex;
+        align-items: center;
+        img{
+            width: 3rem;
+
+            &:not(:last-child){
+                margin-right: 4rem;
+            }
+        }
+    }
+}

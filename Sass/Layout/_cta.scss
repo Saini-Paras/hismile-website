@@ -1,0 +1,16 @@
+.cta{
+    position: relative;
+    background-image: url('img/Focus_Range_Feature_-_D_1872x.jpg');
+    background-size: cover;
+    background-position: bottom ;
+    height: 58vh;
+    position: relative;
+    border-radius: 5px;
+    &__textarea{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+    }
+
+}

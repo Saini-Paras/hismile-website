@@ -1,0 +1,63 @@
+.second__cta{
+
+    &--1{
+        display: flex;    
+        justify-content: space-between;
+        align-items: center;
+        background-color: $light-blue;
+    }
+    &-img{
+        width: 35rem;
+    }
+    &--2{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    &-img-container{
+        width: 20%;
+        position: relative;
+        img{
+        width: 100%;
+        }
+    }
+    &-feature{
+        width: 8rem;
+        height: 8rem;
+        background-color: rgba($White, .7);
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        bottom: 4rem;
+        right: -4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 500;
+        box-shadow: .5rem 1rem 4rem rgba($black, .3);
+        transform: rotate(-25deg);
+
+        &--2{
+            top:4rem;
+            transform: rotate(0);
+        }
+        &--3{
+            top: 20rem;
+            transform: rotate(25deg);
+        }
+        &--4{
+            bottom: 5rem;
+            transform: rotate(0deg);
+
+        }
+        img{
+            width: 1.7rem;
+            margin-bottom: 1rem;
+        }
+        h4{
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        }
+    }
+}

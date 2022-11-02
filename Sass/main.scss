@@ -1,0 +1,31 @@
+@import "Abstracts/functions";
+@import "Abstracts/variables";
+@import "Abstracts/mixins";
+
+@import "Base/animations";
+@import "Base/base";
+@import "Base/typography";
+@import "Base/utilities";
+
+@import "components/header";
+@import "components/btn";
+@import "components/icons";
+@import "components/common";
+@import "components/benefits";
+@import "components/category";
+@import "components/products";
+@import "components/comparision";
+@import "components/testimonial";
+
+@import "pages/home";
+
+@import "layout/grid";
+@import "layout/cta";
+@import "layout/second-cta";
+@import "layout/query";
+@import "layout/footer";
+
+
+
+
+

@@ -1,0 +1,61 @@
+.button {
+  margin-top: 5rem;
+}
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $White;
+    padding: 1.7rem 3rem;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.4s;
+  }
+  &--purple {
+    background-color: $purple;
+
+    &:hover {
+      background-color: $medium-purple;
+    }
+
+  }
+  &--black{
+    &:link,&:visited{
+    background-color: $black;
+    padding: 1.4rem 5rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    &:hover,&:active{
+      background-color: lighten($black,15%);
+    }
+
+  }
+  &--cta{
+    &:link,&:visited{
+      background-color: $black;
+      padding: 1.4rem 5rem;
+    }
+    &:hover,&:active{
+      background-color: lighten($black,10%);
+    }
+
+  }
+  &--large{
+    &:link,&:active{
+    padding: 1.4rem 7rem ;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom:0rem;
+   width: 29rem;
+   text-align: center;
+    }
+  }
+}
+
+
+.card-btn{
+    margin-top: 4rem;
+}

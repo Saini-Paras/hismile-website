@@ -1,0 +1,53 @@
+.benefits{
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 7rem;
+    box-sizing: border-box;
+    // border: 2px solid #000;  
+    &__card{
+        text-align: center; 
+        // background-color: red;
+        width:calc(100%/3) ;
+        // border-radius: 20px;
+        // box-shadow: .2rem 1rem 2rem rgba($grey, .2);
+        // box-shadow: .8rem 1.2rem 1rem rgb($grey, .2),
+        //              -0.8rem -1.2rem 1rem rgb($grey, .2); 
+        padding: 4rem 5rem;
+        transition: box-shadow .3s;
+        position: relative;
+        // border-left: 1.5rem solid $grey; 
+        border-radius: 15px;
+
+        
+
+        &:nth-child(2){
+            // margin-right: 6rem;
+            // border-right: 2px solid $light-grey;
+            // border-left: 2px solid $light-grey;
+            box-shadow: .1rem .5rem 2rem rgba($grey, .15);
+
+        }
+        // &:not(:last-child()){
+        //     margin-right: 2rem;
+        // }
+
+        &:hover{
+            // box-shadow: .5rem 1rem 3rem rgba($grey, .2);
+            // border-radius: 30px;
+            // border-right: 2px solid $main-bg-color;
+            // border-left: 2px solid $main-bg-color;
+        }
+    }
+    &__icon{
+        width:  10rem;       
+        padding: 2.8rem;
+        position: relative;
+        margin-bottom:2rem;
+        
+    }
+    &__card-para{
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: $grey;
+    }
+}

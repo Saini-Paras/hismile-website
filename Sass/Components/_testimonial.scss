@@ -1,0 +1,42 @@
+.testimonial {
+  display: flex;
+  // flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 10rem !important;
+max-width: $grid-width;
+margin: 0 auto;
+position: relative;
+
+  &__box {
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 1rem 4rem rgba($grey, 0.15);
+      margin-bottom: 6rem;
+    
+  }
+  &__img {
+    width: 20rem;
+    object-fit: cover;
+
+    &--1 {
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    &--2 {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+  &__textarea {
+    padding: 4rem 3rem;
+  }
+  &__stars {
+    img {
+      width: 1.5rem;
+    }
+  }
+ 
+}

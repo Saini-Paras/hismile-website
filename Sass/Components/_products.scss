@@ -1,0 +1,95 @@
+.products{
+    display: flex;
+    &__card{
+        border: 1.5px solid $light-grey;
+        width: calc(106rem/3);
+        border-radius: 5px;
+        min-height: 53rem;
+        // max-height: 80rem;
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+
+        &-img{
+            width: 100%;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            min-height: 28rem;
+            &-1{
+            background-image: url("img/Refresh-V34Foam-ProductPage_9059446a-00cb-419b-9c03-953faa65cf3e_1220x.-2.png");
+            }
+            &-2{
+                background-image: url("img/Refresh-V34Foam-ProductPage_9059446a-00cb-419b-9c03-953faa65cf3e_1220x-2.png");
+            }
+            &-3{
+                background-image: url("img/Refresh-V34Foam-ProductPage_9059446a-00cb-419b-9c03-953faa65cf3e_1220x-3.png");
+            }
+            }
+        
+        &-text{
+            padding: 2rem  3rem 3rem 3rem ;
+            position: relative;
+            
+        }
+        &-para{
+            color: $grey;
+            font-size: 1.3rem;
+        }
+        &-users{
+            display: flex;
+            align-items: center;
+            margin-top: 1.4rem;
+            p{
+                font-size: 1.1rem;
+                margin-left: .8rem;
+            }
+        }
+    }
+    &__design{
+        // background-image: url("img/V34-ProductImage2_1220x.png");
+        // background-size: cover;
+        // background-position: right;
+        border-radius: 5px;
+        border: 1.5px solid $light-grey;
+        position: absolute;
+        top: 63.5%;
+        right: -39.5rem;
+        transform: translateY(-50%);
+        height: 75vh;
+        width: 50rem;
+        
+        
+    }
+}
+.design{
+    position: relative;
+    
+}
+.arrow{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: $purple;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 22.5rem;
+    right:9.5rem;
+    box-shadow: 0 .5rem 2rem rgba($black, .15);
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.1);
+        background-color: $medium-purple;
+    }
+    
+
+    img{
+        width: 2.5rem;
+        filter: invert(1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet and favicon -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <!-- end of stylesheet and favicon -->
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/5aa43eaa53.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End of font awesome cdn -->
+
+    <title>Hismile</title>
+  </head>
+  <body>
+    <!-- ------Header------ -->
+    <header class="header">
+      <div class="header__notification">
+        <img src="icons/truck.png" alt="transport truck png" />
+        <p>Enjoy free shipping when you spend over $55</p>
+      </div>
+      <div class="row">
+        <div class="header__nav">
+          <div class="header__logo-box">
+            <a href="#">
+              <svg
+                width="91"
+                height="24"
+                viewBox="0 0 91 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hismile-logo header__logo"
+              >
+                <path
+                  d="M3.50743 0V10.7635C4.01695 10.0459 4.6957 9.46562 5.48329 9.07415C6.27088 8.68267 7.1429 8.49217 8.02177 8.51958C11.4317 8.51958 13.9326 10.9583 13.9326 14.2426V23.576H10.4248V15.2181C10.3903 14.3229 10.0108 13.476 9.36609 12.8549C8.72136 12.2338 7.86144 11.8868 6.96675 11.8868C6.07206 11.8868 5.21214 12.2338 4.56741 12.8549C3.92268 13.476 3.54324 14.3229 3.50872 15.2181V23.5751H0V0H3.50743Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M18.8034 2.04859C19.0998 2.0409 19.3947 2.09368 19.67 2.20373C19.9454 2.31377 20.1955 2.47878 20.4052 2.68869C20.6148 2.89861 20.7796 3.14904 20.8895 3.42476C20.9995 3.70047 21.0522 3.99569 21.0445 4.29246C21.0487 4.58679 20.9934 4.87892 20.8819 5.15127C20.7703 5.42362 20.6049 5.67054 20.3955 5.87714C20.1861 6.08375 19.9371 6.24577 19.6635 6.35345C19.3898 6.46112 19.0973 6.51221 18.8034 6.50365C18.5114 6.51135 18.2208 6.4594 17.9495 6.35099C17.6781 6.24258 17.4317 6.07996 17.2252 5.87306C17.0187 5.66616 16.8564 5.41931 16.7483 5.14756C16.6402 4.87582 16.5884 4.58487 16.5963 4.29246C16.585 3.99764 16.6342 3.70363 16.7406 3.42854C16.8471 3.15344 17.0087 2.90308 17.2155 2.69287C17.4222 2.48267 17.6698 2.31706 17.9429 2.20626C18.216 2.09545 18.5088 2.04179 18.8034 2.04859ZM20.5574 8.94236V23.5751H17.0499V8.94236H20.5574Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M22.8955 19.7054L26.1753 19.2176C26.433 20.2258 27.3781 20.9411 29.0658 20.9411C30.3648 20.9411 31.404 20.4533 31.404 19.5428C31.404 18.9251 30.9495 18.5023 29.7802 18.1122L26.7926 17.169C24.3242 16.3561 23.2851 15.1531 23.2851 13.0718C23.2851 9.85287 25.8196 8.51953 28.9361 8.51953C32.151 8.51953 34.1648 10.0804 34.5205 12.4542L31.2403 13.0069C31.0131 12.1613 30.169 11.5445 28.6749 11.5445C27.5705 11.5445 26.6289 11.9673 26.6289 12.8129C26.6289 13.3656 27.0185 13.6907 27.9279 14.0172L30.916 15.0253C33.6115 15.9681 34.7482 17.3015 34.7482 19.415C34.7482 22.569 32.1497 24 28.967 24C25.396 24 23.2851 22.3071 22.8955 19.7054Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M40.6597 8.94241V10.5033C41.142 9.87029 41.7671 9.36058 42.4838 9.01581C43.2006 8.67104 43.9886 8.50101 44.7836 8.51961C45.6917 8.50347 46.5895 8.71509 47.3951 9.13517C48.2006 9.55526 48.8885 10.1705 49.3959 10.9248C49.8952 10.155 50.5858 9.5284 51.4 9.10651C52.2142 8.68462 53.1239 8.48193 54.0399 8.51832C57.385 8.51832 59.8533 10.8594 59.8533 13.9489V23.5751H56.3781V14.9579C56.3829 14.5535 56.3074 14.1521 56.1562 13.777C56.0049 13.402 55.7808 13.0607 55.4969 12.773C55.2129 12.4853 54.8748 12.2569 54.502 12.101C54.1292 11.9451 53.7293 11.8649 53.3253 11.8649C52.9214 11.8649 52.5214 11.9451 52.1487 12.101C51.7759 12.2569 51.4378 12.4853 51.1538 12.773C50.8699 13.0607 50.6458 13.402 50.4945 13.777C50.3432 14.1521 50.2678 14.5535 50.2726 14.9579V23.5751H46.7652V14.9579C46.77 14.5535 46.6945 14.1521 46.5433 13.777C46.392 13.402 46.1679 13.0607 45.884 12.773C45.6 12.4853 45.2619 12.2569 44.8891 12.101C44.5164 11.9451 44.1164 11.8649 43.7124 11.8649C43.3085 11.8649 42.9085 11.9451 42.5358 12.101C42.163 12.2569 41.8249 12.4853 41.5409 12.773C41.257 13.0607 41.0329 13.402 40.8816 13.777C40.7303 14.1521 40.6549 14.5535 40.6597 14.9579V23.5751H37.1519V8.94241H40.6597Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M64.7248 2.04857C65.0211 2.04095 65.3159 2.09378 65.5913 2.20385C65.8666 2.31392 66.1167 2.47893 66.3263 2.68884C66.5359 2.89875 66.7006 3.14916 66.8105 3.42485C66.9204 3.70053 66.9731 3.99572 66.9654 4.29245C66.9697 4.58674 66.9143 4.87884 66.8028 5.15116C66.6913 5.42347 66.5259 5.67037 66.3166 5.87697C66.1072 6.08358 65.8582 6.24561 65.5847 6.35331C65.3111 6.461 65.0186 6.51214 64.7248 6.50364C64.4327 6.51146 64.1421 6.4596 63.8706 6.35124C63.5992 6.24287 63.3527 6.08027 63.1461 5.87335C62.9395 5.66643 62.7772 5.41953 62.6691 5.14773C62.561 4.87592 62.5093 4.58491 62.5172 4.29245C62.5059 3.99758 62.555 3.7035 62.6615 3.42835C62.7679 3.15319 62.9296 2.90279 63.1364 2.69256C63.3432 2.48234 63.5909 2.31674 63.864 2.20599C64.1372 2.09523 64.4301 2.04166 64.7248 2.04857ZM66.4783 8.94235V23.5751H62.9708V8.94235H66.4783Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M69.5962 0H73.1036V23.5751H69.5962V0Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M83.3659 8.51983C84.3797 8.50779 85.3855 8.70046 86.3232 9.08633C87.261 9.4722 88.1114 10.0434 88.8238 10.7657C89.5361 11.488 90.0958 12.3467 90.4693 13.2904C90.8428 14.2341 91.0225 15.2435 90.9976 16.2583C90.9976 16.6937 90.9651 17.1284 90.9005 17.559H79.3061C79.559 18.4978 80.1186 19.3248 80.8956 19.9082C81.6725 20.4916 82.6222 20.7977 83.5932 20.7779C84.2406 20.7809 84.8809 20.6429 85.4697 20.3733C86.0585 20.1038 86.5818 19.7093 87.0031 19.217L90.4134 20.2252C89.7091 21.3997 88.7074 22.367 87.5098 23.0294C86.3122 23.6917 84.9611 24.0256 83.5932 23.9973C79.0788 23.9973 75.6689 20.6807 75.6689 16.2583C75.646 15.2385 75.8293 14.2246 76.2076 13.2775C76.5859 12.3304 77.1515 11.4696 77.8704 10.7468C78.5893 10.024 79.4467 9.45415 80.391 9.07146C81.3354 8.68877 82.3473 8.50114 83.3659 8.51983ZM79.3387 14.8282H87.3931C87.1398 13.9374 86.6031 13.1538 85.8645 12.5962C85.1258 12.0387 84.2256 11.7378 83.3006 11.7392C82.394 11.7504 81.5159 12.0584 80.8005 12.6162C80.0851 13.174 79.5717 13.9509 79.3387 14.8282Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Products</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Membership</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Customer Effects</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Our story</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Explore</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Help</a>
+            </li>
+          </ul>
+          <ul class="header__nav-list">
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links">Log in</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#" class="header__nav-links"
+                ><i class="fa-solid fa-bag-shopping shopping-bag"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-section">
+        <div class="hero-section-textarea">
+          <h1 class="heading-primary u-margin-bottom">
+            This is the end <br />
+            of <span class="heading-primary--color">stains</span> on <br />the
+            teeth
+          </h1>
+          <p class="paragraph">
+            Say hello to V34, an innovative formula that conceals stains using
+            <br />color correcting technology.
+          </p>
+          <div class="button">
+            <a href="#" class="btn btn--purple">Buy V34 color corrector</a>
+          </div>
+        </div>
+        <div class="hero-section-img-box">
+          <img src="img/hero-bg2.png" class="hero-section-img" alt="" />
+        </div>
+      </div>
+    </header>
+    <!---------End of header-------->
+
+    <!---------Benefits section-------->
+    <main>
+      <section class="benefits-section">
+        <div class="center__container u-margin-bottom u-center-text">
+          <h2 class="heading-secondary u-margin-bottom">
+            Benefits of using <br />
+            hismile products
+          </h2>
+          <p class="paragraph">
+            We help people deal with complexes and at the same time improve
+            <br />
+            other aspects that contribute to a better life.
+          </p>
+        </div>
+        <div class="row">
+          <div class="benefits">
+            <div class="benefits__card">
+              <img
+                src="icons/smile2.png"
+                alt="smile icon"
+                class="benefits__icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Snow-white smile
+              </h3>
+              <p class="benefits__card-para">
+                With us, your teeth will <br />
+                become whiter again.
+              </p>
+            </div>
+            <div class="benefits__card">
+              <img
+                src="icons/wind2.png"
+                alt="wind icon"
+                class="benefits__icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Freah breath
+              </h3>
+              <p class="benefits__card-para">
+                Hismile products take care of the color <br />
+                of your teeth and your breath.
+              </p>
+            </div>
+            <div class="benefits__card">
+              <img
+                src="icons/tooth2.png"
+                alt="tooth icon"
+                class="benefits__icon"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Healthy teeth
+              </h3>
+              <p class="benefits__card-para">
+                To improve your well-being, we also <br />
+                care about the health of your teeth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------End of Benefits section-------->
+
+      <!-- Category section -->
+
+      <section class="category-section">
+        <div class="center__container u-margin-bottom u-center-text">
+          <h2 class="heading-secondary u-margin-bottom">
+            Choose your goal <br />& start smiling
+          </h2>
+          <p class="paragraph">
+            We've got a solution for every smile, with expert <br />
+            formulations and incredible ingredients.
+          </p>
+        </div>
+
+        <div class="category">
+          <div class="category__card">
+            <div class="category__img category__img-1"></div>
+            <div class="category__text category__text--one">
+              <h3 class="heading-tertiary u-margin-bottom">Whitening</h3>
+              <a href="#" class="category__link">Find out more</a>
+            </div>
+            <div class="category__card-back">
+              <p class="category__card-back-heading u-margin-bottom-small">
+                Whitening
+              </p>
+              <h3 class="heading-tertiary">PAP+ Whitening Strips™</h3>
+              <p class="category__card-back-description">
+                Based on our instant whitening formula PAP+, we’ve designed
+                strips as our most convenient way to whiten yet.
+              </p>
+              <ul class="category__card-back-list">
+                <li class="category__card-back-items">
+                  No gum irritation, no tooth sensitivity
+                </li>
+                <li class="category__card-back-items">
+                  Fast results after just one treatment
+                </li>
+                <li class="category__card-back-items">
+                  Includes 14 individual on-the-go treatments
+                </li>
+              </ul>
+              <div class="card-btn u-center-text">
+                <a href="#" class="btn btn--purple btn--large"
+                  >Add to cart - $39</a
+                >
+              </div>
+              <div class="link u-center-text u-margin-top">
+                <a href="#" class="category__link">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="category__card">
+            <div class="category__img category__img-2"></div>
+            <div class="category__text">
+              <h3 class="heading-tertiary u-margin-bottom">Hydrating</h3>
+              <a href="#" class="category__link">Find out more</a>
+            </div>
+            <div class="category__card-back">
+              <p class="category__card-back-heading u-margin-bottom-small">
+                hydrating
+              </p>
+              <h3 class="heading-tertiary">HA5 Hyaluronic Mouthwash</h3>
+              <p class="category__card-back-description">
+                HA5 Hyaluronic Mouthwash is an everyday essential, that leaves
+                you feeling fresh and revitalised. It’s the perfect addition to
+                your daily smile care routine.
+              </p>
+              <ul class="category__card-back-list">
+                <li class="category__card-back-items">
+                  Refreshing mouthwash to maintain healthy gums
+                </li>
+                <li class="category__card-back-items">
+                  Boosts hydration with an alcohol-free formulation
+                </li>
+                <li class="category__card-back-item s">
+                  mproves oral hygiene for a healthier smile
+                </li>
+              </ul>
+              <div class="card-btn u-center-text">
+                <a href="#" class="btn btn--purple btn--large"
+                  >Add to cart - $28</a
+                >
+              </div>
+              <div class="link u-center-text u-margin-top">
+                <a href="#" class="category__link">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="category__card">
+            <div class="category__img category__img-3"></div>
+            <div class="category__text">
+              <h3 class="heading-tertiary u-margin-bottom">Brightening</h3>
+              <a href="#" class="category__link">Find out more</a>
+            </div>
+            <div class="category__card-back">
+              <p class="category__card-back-heading u-margin-bottom-small">
+                Brightening
+              </p>
+              <h3 class="heading-tertiary">V34 Colour Corrector Serum</h3>
+              <p class="category__card-back-description">
+                V34 works to brighten teeth by utilising colour correcting
+                technology. By counter-balancing the different hues in your
+                teeth, V34 conceals stains and improves...
+              </p>
+              <ul class="category__card-back-list">
+                <li class="category__card-back-items">
+                  Utilises colour correcting technology
+                </li>
+                <li class="category__card-back-items">
+                  Non-invasive brightening treatment
+                </li>
+                <li class="category__card-back-items">
+                  Highest concentration of V34 in our range
+                </li>
+              </ul>
+              <div class="card-btn u-center-text">
+                <a href="#" class="btn btn--purple btn--large"
+                  >Add to cart - $30</a
+                >
+              </div>
+              <div class="link u-center-text u-margin-top">
+                <a href="#" class="category__link">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="category__card">
+            <div class="category__img category__img-4"></div>
+            <div class="category__text">
+              <h3 class="heading-tertiary u-margin-bottom">Senstivity</h3>
+              <a href="#" class="category__link">Find out more</a>
+            </div>
+            <div class="category__card-back">
+              <p class="category__card-back-heading u-margin-bottom-small">
+                senstivity
+              </p>
+              <h3 class="heading-tertiary">NHpro Enamel Care</h3>
+              <p class="category__card-back-description">
+                Our NHpro formulation contains a concentrated dose of
+                nano-hydroxyapatite (nHAp), an ingredient clinically proven to
+                improve enamel and treat tooth sensitivity.
+              </p>
+              <ul class="category__card-back-list">
+                <li class="category__card-back-items">
+                  nHAp is clinically proven to treat sensitivity
+                </li>
+                <li class="category__card-back-items">
+                  Developed at the Hismile Research Centre
+                </li>
+                <li class="category__card-back-items">
+                  Includes: nano-hydroxyapatite, theobromine, and xylitol.
+                </li>
+              </ul>
+              <div class="card-btn u-center-text">
+                <a href="#" class="btn btn--purple btn--large"
+                  >Add to cart - $40</a
+                >
+              </div>
+              <div class="link u-center-text u-margin-top">
+                <a href="#" class="category__link">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--End of Category section -->
+      <!-- Products section -->
+
+      <section class="products-section">
+        <div class="row design">
+          <div class="u-margin-bottom">
+            <h2 class="heading-secondary u-margin-bottom">
+              More hismile products <br />
+              for your choice
+            </h2>
+            <p class="paragraph">
+              Build the perfect smile care routine with our <br />
+              everyday range, and PAP+ whitening products.
+            </p>
+          </div>
+          <div class="products">
+            <div class="products__card">
+              <div class="products__card-img products__card-img-1"></div>
+              <div class="products__card-text">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  V34 Colour <br />
+                  Corrector Serum
+                </h3>
+                <p class="products__card-para">
+                  For neutralising yellow undertones and <br />
+                  brightening dull white teeth.
+                </p>
+
+                <div class="products__card-users">
+                  <img
+                    src="icons/user-colored.png"
+                    alt="person icon"
+                    class="users-icon"
+                  />
+                  <p>185 people are currently looking at this product</p>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn--purple btn--large"
+                    >Add to cart - $29</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="products__card">
+              <div class="products__card-img products__card-img-2"></div>
+              <div class="products__card-text">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  The Maximum <br />
+                  Whitening Bundle
+                </h3>
+                <p class="products__card-para">
+                  Start your whitening journey with the gold <br />
+                  standard in smile care!
+                </p>
+
+                <div class="products__card-users">
+                  <img
+                    src="icons/user-colored.png"
+                    alt="person icon"
+                    class="users-icon"
+                  />
+                  <p>52 people are currently looking at this product</p>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn--purple btn--large"
+                    >Add to cart - $126.40</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="products__card">
+              <div class="products__card-img products__card-img-3"></div>
+              <div class="products__card-text">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  PAP+ Whitening Toothpaste
+                </h3>
+                <p class="products__card-para">
+                  For a fast and effective whitening solution <br />
+                  that's easy to use.
+                </p>
+
+                <div class="products__card-users">
+                  <img
+                    src="icons/user-colored.png"
+                    alt="person icon"
+                    class="users-icon"
+                  />
+                  <p>104 people are currently looking at this product</p>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn--purple btn--large"
+                    >Add to cart - $25</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="products__card products__design">
+              <div class="products__card-img products__card-img-2"></div>
+              <div class="products__card-text">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  The Maximum <br />
+                  Whitening Bundle
+                </h3>
+                <p class="products__card-para">
+                  Start your whitening journey with the gold <br />
+                  standard in smile care!
+                </p>
+
+                <div class="products__card-users">
+                  <img
+                    src="icons/user-colored.png"
+                    alt="person icon"
+                    class="users-icon"
+                  />
+                  <p>52 people are currently looking at this product</p>
+                </div>
+                <div class="card-btn">
+                  <a href="#" class="btn btn--purple btn--large"
+                    >Add to cart - $126.40</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- <div class="products__design products__card"></div> -->
+          </div>
+
+          <div class="arrow">
+            <img src="icons/next.png" alt="arrow icon" />
+          </div>
+        </div>
+      </section>
+      <!-- End of Products section -->
+
+      <!-- comparision section -->
+      <section class="compare-section">
+        <div class="compare">
+          <div class="compare__img"></div>
+          <div class="compare__textarea">
+            <div class="container">
+              <h2 class="heading-secondary u-margin-bottom">
+                Whiter teeth <br />
+                in just a few days
+              </h2>
+              <p class="paragraph u-margin-bottom-large">
+                You should see the effects after 7 days of regular use of
+                hismile <br />
+                products. If you are dissatisfied, we will simply refund your
+                money!
+              </p>
+              <div class="compare__features-box">
+                <div class="compare__feature">
+                  <img
+                    src="icons/u-turn.png"
+                    alt="u-turn icon"
+                    class="u-margin-bottom"
+                  />
+                  <h4>
+                    money back <br />
+                    guarantee
+                  </h4>
+                </div>
+                <div class="compare__feature">
+                  <img
+                    src="icons/shield.png"
+                    alt="shield icon"
+                    class="u-margin-bottom"
+                  />
+                  <h4>
+                    Painless <br />
+                    application
+                  </h4>
+                </div>
+                <div class="compare__feature">
+                  <img
+                    src="icons/clean.png"
+                    alt="clean icon"
+                    class="u-margin-bottom"
+                  />
+                  <h4>
+                    effect after <br />
+                    a few days
+                  </h4>
+                </div>
+                <div class="compare__feature">
+                  <img
+                    src="icons/leaf.png"
+                    alt="leaf icon"
+                    class="u-margin-bottom"
+                  />
+                  <h4>
+                    natural <br />
+                    ingredients
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="compare__right-box">
+            <p>exclusive offer only for today</p>
+          </div>
+        </div>
+      </section>
+      <!-- End of comparision section -->
+
+      <!-- Testimonial section -->
+      <section class="testimonial-section">
+        <div class="u-margin-bottom u-center-text">
+          <h2 class="heading-secondary u-margin-bottom">
+            Meet thousands of <br />
+            satisfied customers
+          </h2>
+          <p class="paragraph">
+            We have thousands of verified opinions from <br />
+            customers all over the world!
+          </p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__box">
+            <img
+              src="img/person 3.jpg"
+              class="testimonial__img testimonial__img--1"
+              alt="person image"
+            />
+
+            <div class="testimonial__textarea">
+              <div class="testimonial__stars u-margin-bottom">
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/rating.png" alt="half-star png" />
+              </div>
+              <p class="products__card-para u-margin-bottom">
+                "I have purchased the purple toothpaste and the strips. I love
+                the toothpaste. It tastes great and is very effective. It does
+                fades from the initial brightness but i have noticed over time a
+                difference. If you use it before heading out, you will have a
+                nice bright smile. There is lots of color pigment so be careful
+                with clothing."
+              </p>
+              <h3>Melissa Swirlz, NO</h3>
+            </div>
+          </div>
+          <div class="testimonial__box">
+            <img
+              src="img/testimonial person 2.jpg"
+              class="testimonial__img testimonial__img--2"
+              alt="person image"
+            />
+
+            <div class="testimonial__textarea">
+              <div class="testimonial__stars u-margin-bottom">
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="star png" />
+                <img src="icons/star.png" alt="half-star png" />
+              </div>
+              <p class="products__card-para u-margin-bottom">
+                "This is one the best product that i bought in my entire life. I
+                have been using this hismile product from the last one year and
+                i can say that you should also try this and you will start
+                seeing the changes from the first week itself. I will give it a
+                10/10. I am very thankful to hismile that they made a product
+                like this. "
+              </p>
+              <h3 class="testimonial__sub">Alicia kondz</h3>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn--black">More reviews</a>
+      </section>
+      <!-- End of Testimonial section -->
+
+      <!-- cta section -->
+      <section class="cta-section">
+        <div class="row">
+          <div class="cta">
+            <div class="cta__img"></div>
+            <div class="cta__textarea">
+              <h2 class="heading-secondary u-margin-bottom">
+                Where science <br />
+                meets smile care
+              </h2>
+
+              <p class="paragraph u-margin-bottom-large">
+                Introducing the focus range-a solution for every smile, with
+                <br />
+                expert formulation and incredible ingredients.
+              </p>
+              <a href="#" class="btn btn--cta">Shop the focus range</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  end cta section -->
+      <!-- Query section -->
+
+      <!-- <section class="query-section">
+        <div class="u-margin-bottom-large u-center-text">
+          <h2 class="heading-secondary u-margin-bottom">
+            You have questions, <br />
+            we have answers.
+          </h2>
+        </div>
+        <div class="row">
+          <div class="query">
+            <div class="query__container-left">
+              <div class="query__box">
+                <div class="query__box-question">
+                  My order status is Unfulfilled, what does this mean?
+                </div>
+                <div class="query__box-answer">
+                  <div class="query__box-answer-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Saepe minus soluta nam aliquid necessitatibus quo quae eaque
+                    non doloribus molestiae fuga eius quis, perferendis cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ea, quasi.
+                  </div>
+                </div>
+              </div>
+              <div class="query__box">
+                <div class="query__box-question">
+                  Does the Hismile PAP+ formula use peroxide?
+                </div>
+                <div class="query__box-answer">
+                  <div class="query__box-answer-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Saepe minus soluta nam aliquid necessitatibus quo quae eaque
+                    non doloribus molestiae fuga eius quis, perferendis cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ea, quasi. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Iusto id optio eius vero nesciunt
+                    exercitationem?
+                  </div>
+                </div>
+              </div>
+              <div class="query__box">
+                <div class="query__box-question">
+                  How long does it take to see results from the Hismile Teeth
+                  Whitening Kit?
+                </div>
+                <div class="query__box-answer">
+                  <div class="query__box-answer-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Saepe minus soluta nam aliquid necessitatibus quo quae eaque
+                    non doloribus molestiae fuga eius quis, perferendis cum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ea, quasi. Lorem ipsum dolor sit amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="query__container-right"></div>
+          </div>
+        </div>
+      </section> -->
+      <!--End of Query section -->
+
+      <!-- second cta section -->
+
+      <section class="second-cta-section">
+        <div class="second__cta">
+          <div class="second__cta--1">
+            <img
+              src="img/second-cta-1.png"
+              class="second__cta-img"
+              alt="image"
+            />
+            <div class="second__cta-textarea">
+              <div class="u-margin-bottom u-center-text">
+                <h2 class="heading-secondary u-margin-bottom">
+                  Whiten your teeth with <br />
+                  hismile products
+                </h2>
+                <p class="paragraph u-margin-bottom-large">
+                  You deserve wither teeth and well-being!
+                </p>
+                <a href="#" class="btn btn--purple">Buy color corrector</a>
+              </div>
+            </div>
+            <img
+              src="img/second-cta-2.png"
+              alt="image 2"
+              class="second__cta-img"
+            />
+          </div>
+          <div class="second__cta--2">
+            <div class="second__cta-img-container">
+              <img
+                src="img/person 1.jpg"
+                alt="person image"
+                class="second__cta-img-2"
+              />
+              <div class="second__cta-feature">
+                <img
+                  src="icons/leaf.png"
+                  alt="leaf img"
+                  class="second__cta-feature-img-1"
+                />
+                <h4>natural</h4>
+              </div>
+            </div>
+            <div class="second__cta-img-container">
+              <img
+                src="img/person 2.jpg"
+                alt="person image"
+                class="second__cta-img-2"
+              />
+              <div class="second__cta-feature second__cta-feature--2">
+                <img
+                  src="icons/heart-attack.png"
+                  alt="leaf img"
+                  class="second__cta-feature-img-2"
+                />
+                <h4>healthy</h4>
+              </div>
+            </div>
+            <div class="second__cta-img-container">
+              <img
+                src="img/person 4.jpg"
+                alt="person image"
+                class="second__cta-img-2"
+              />
+              <div class="second__cta-feature second__cta-feature--3">
+                <img
+                  src="icons/verified.png"
+                  alt="leaf img"
+                  class="second__cta-feature-img-2"
+                />
+                <h4>secure</h4>
+              </div>
+            </div>
+            <div class="second__cta-img-container">
+              <img
+                src="img/person 5.jpg"
+                alt="person image"
+                class="second__cta-img-2"
+              />
+              <div class="second__cta-feature second__cta-feature--4">
+                <img
+                  src="icons/pouch.png"
+                  alt="leaf img"
+                  class="second__cta-feature-img-4"
+                />
+                <h4>cheap</h4>
+              </div>
+            </div>
+            <div class="second__cta-img-container">
+              <img
+                src="img/person 6.jpg"
+                alt="person image"
+                class="second__cta-img-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of second cta section -->
+
+      <!-- footer -->
+      <footer class="footer-section">
+        <div class="footer">
+          <div class="footer__email">
+            <div class="u-margin-bottom-large u-center-text">
+              <h3 class="heading-tertiary u-margin-bottom">
+                Want the chance to <br />
+                trail our new products?
+              </h3>
+              <p class="paragraph">
+                Sign up for the latest news, exclusive offer, and a chance
+                <br />
+                to trail new and unreleased products.
+              </p>
+            </div>
+            <input
+              type="email"
+              name="email"
+              class="footer__input"
+              placeholder="Enter your email address..."
+            />
+            <a href="#" class="btn btn--black">Send to us</a>
+          </div>
+
+          <!-- footer-main -->
+          <div class="row">
+            <div class="footer__main">
+              <ul class="footer__main-list">
+                <li class="footer__main-item">
+                  <a href="#">
+                    <svg
+                      width="91"
+                      height="24"
+                      viewBox="0 0 91 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="hismile-logo header__logo"
+                    >
+                      <path
+                        d="M3.50743 0V10.7635C4.01695 10.0459 4.6957 9.46562 5.48329 9.07415C6.27088 8.68267 7.1429 8.49217 8.02177 8.51958C11.4317 8.51958 13.9326 10.9583 13.9326 14.2426V23.576H10.4248V15.2181C10.3903 14.3229 10.0108 13.476 9.36609 12.8549C8.72136 12.2338 7.86144 11.8868 6.96675 11.8868C6.07206 11.8868 5.21214 12.2338 4.56741 12.8549C3.92268 13.476 3.54324 14.3229 3.50872 15.2181V23.5751H0V0H3.50743Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        d="M18.8034 2.04859C19.0998 2.0409 19.3947 2.09368 19.67 2.20373C19.9454 2.31377 20.1955 2.47878 20.4052 2.68869C20.6148 2.89861 20.7796 3.14904 20.8895 3.42476C20.9995 3.70047 21.0522 3.99569 21.0445 4.29246C21.0487 4.58679 20.9934 4.87892 20.8819 5.15127C20.7703 5.42362 20.6049 5.67054 20.3955 5.87714C20.1861 6.08375 19.9371 6.24577 19.6635 6.35345C19.3898 6.46112 19.0973 6.51221 18.8034 6.50365C18.5114 6.51135 18.2208 6.4594 17.9495 6.35099C17.6781 6.24258 17.4317 6.07996 17.2252 5.87306C17.0187 5.66616 16.8564 5.41931 16.7483 5.14756C16.6402 4.87582 16.5884 4.58487 16.5963 4.29246C16.585 3.99764 16.6342 3.70363 16.7406 3.42854C16.8471 3.15344 17.0087 2.90308 17.2155 2.69287C17.4222 2.48267 17.6698 2.31706 17.9429 2.20626C18.216 2.09545 18.5088 2.04179 18.8034 2.04859ZM20.5574 8.94236V23.5751H17.0499V8.94236H20.5574Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        d="M22.8955 19.7054L26.1753 19.2176C26.433 20.2258 27.3781 20.9411 29.0658 20.9411C30.3648 20.9411 31.404 20.4533 31.404 19.5428C31.404 18.9251 30.9495 18.5023 29.7802 18.1122L26.7926 17.169C24.3242 16.3561 23.2851 15.1531 23.2851 13.0718C23.2851 9.85287 25.8196 8.51953 28.9361 8.51953C32.151 8.51953 34.1648 10.0804 34.5205 12.4542L31.2403 13.0069C31.0131 12.1613 30.169 11.5445 28.6749 11.5445C27.5705 11.5445 26.6289 11.9673 26.6289 12.8129C26.6289 13.3656 27.0185 13.6907 27.9279 14.0172L30.916 15.0253C33.6115 15.9681 34.7482 17.3015 34.7482 19.415C34.7482 22.569 32.1497 24 28.967 24C25.396 24 23.2851 22.3071 22.8955 19.7054Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        d="M40.6597 8.94241V10.5033C41.142 9.87029 41.7671 9.36058 42.4838 9.01581C43.2006 8.67104 43.9886 8.50101 44.7836 8.51961C45.6917 8.50347 46.5895 8.71509 47.3951 9.13517C48.2006 9.55526 48.8885 10.1705 49.3959 10.9248C49.8952 10.155 50.5858 9.5284 51.4 9.10651C52.2142 8.68462 53.1239 8.48193 54.0399 8.51832C57.385 8.51832 59.8533 10.8594 59.8533 13.9489V23.5751H56.3781V14.9579C56.3829 14.5535 56.3074 14.1521 56.1562 13.777C56.0049 13.402 55.7808 13.0607 55.4969 12.773C55.2129 12.4853 54.8748 12.2569 54.502 12.101C54.1292 11.9451 53.7293 11.8649 53.3253 11.8649C52.9214 11.8649 52.5214 11.9451 52.1487 12.101C51.7759 12.2569 51.4378 12.4853 51.1538 12.773C50.8699 13.0607 50.6458 13.402 50.4945 13.777C50.3432 14.1521 50.2678 14.5535 50.2726 14.9579V23.5751H46.7652V14.9579C46.77 14.5535 46.6945 14.1521 46.5433 13.777C46.392 13.402 46.1679 13.0607 45.884 12.773C45.6 12.4853 45.2619 12.2569 44.8891 12.101C44.5164 11.9451 44.1164 11.8649 43.7124 11.8649C43.3085 11.8649 42.9085 11.9451 42.5358 12.101C42.163 12.2569 41.8249 12.4853 41.5409 12.773C41.257 13.0607 41.0329 13.402 40.8816 13.777C40.7303 14.1521 40.6549 14.5535 40.6597 14.9579V23.5751H37.1519V8.94241H40.6597Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        d="M64.7248 2.04857C65.0211 2.04095 65.3159 2.09378 65.5913 2.20385C65.8666 2.31392 66.1167 2.47893 66.3263 2.68884C66.5359 2.89875 66.7006 3.14916 66.8105 3.42485C66.9204 3.70053 66.9731 3.99572 66.9654 4.29245C66.9697 4.58674 66.9143 4.87884 66.8028 5.15116C66.6913 5.42347 66.5259 5.67037 66.3166 5.87697C66.1072 6.08358 65.8582 6.24561 65.5847 6.35331C65.3111 6.461 65.0186 6.51214 64.7248 6.50364C64.4327 6.51146 64.1421 6.4596 63.8706 6.35124C63.5992 6.24287 63.3527 6.08027 63.1461 5.87335C62.9395 5.66643 62.7772 5.41953 62.6691 5.14773C62.561 4.87592 62.5093 4.58491 62.5172 4.29245C62.5059 3.99758 62.555 3.7035 62.6615 3.42835C62.7679 3.15319 62.9296 2.90279 63.1364 2.69256C63.3432 2.48234 63.5909 2.31674 63.864 2.20599C64.1372 2.09523 64.4301 2.04166 64.7248 2.04857ZM66.4783 8.94235V23.5751H62.9708V8.94235H66.4783Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        d="M69.5962 0H73.1036V23.5751H69.5962V0Z"
+                        fill="black"
+                      ></path>
+                      <path
+                        d="M83.3659 8.51983C84.3797 8.50779 85.3855 8.70046 86.3232 9.08633C87.261 9.4722 88.1114 10.0434 88.8238 10.7657C89.5361 11.488 90.0958 12.3467 90.4693 13.2904C90.8428 14.2341 91.0225 15.2435 90.9976 16.2583C90.9976 16.6937 90.9651 17.1284 90.9005 17.559H79.3061C79.559 18.4978 80.1186 19.3248 80.8956 19.9082C81.6725 20.4916 82.6222 20.7977 83.5932 20.7779C84.2406 20.7809 84.8809 20.6429 85.4697 20.3733C86.0585 20.1038 86.5818 19.7093 87.0031 19.217L90.4134 20.2252C89.7091 21.3997 88.7074 22.367 87.5098 23.0294C86.3122 23.6917 84.9611 24.0256 83.5932 23.9973C79.0788 23.9973 75.6689 20.6807 75.6689 16.2583C75.646 15.2385 75.8293 14.2246 76.2076 13.2775C76.5859 12.3304 77.1515 11.4696 77.8704 10.7468C78.5893 10.024 79.4467 9.45415 80.391 9.07146C81.3354 8.68877 82.3473 8.50114 83.3659 8.51983ZM79.3387 14.8282H87.3931C87.1398 13.9374 86.6031 13.1538 85.8645 12.5962C85.1258 12.0387 84.2256 11.7378 83.3006 11.7392C82.394 11.7504 81.5159 12.0584 80.8005 12.6162C80.0851 13.174 79.5717 13.9509 79.3387 14.8282Z"
+                        fill="black"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__main-item">
+                  <a
+                    href="#"
+                    class="footer__main-link footer__main-link-underline"
+                    >contact@hismile.com</a
+                  >
+                </li>
+                <li class="footer__main-item">
+                  <a
+                    href="#"
+                    class="footer__main-link footer__main-link-underline"
+                    >+1-202-555-0167</a
+                  >
+                </li>
+                <p class="footer__main-para">
+                  Mon - Fri:6:00 am - 7:00 pm <br />
+                  Sat:8:00 am - 2:00 pm <br />
+                  Sun: Closed
+                </p>
+              </ul>
+              <ul class="footer__main-list">
+                <li class="footer__main-item"><h3>SHOP</h3></li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link"
+                    >V34 Color Corrector Serum</a
+                  >
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link"
+                    >PAP+ Whitening Strips&trade;
+                  </a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link"
+                    >The Ultimate Whitening Bundle</a
+                  >
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link"
+                    >PAP+ Whitening Powder&trade;</a
+                  >
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link"
+                    >V34 Color Corrector Foam</a
+                  >
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">View all products</a>
+                </li>
+              </ul>
+              <ul class="footer__main-list">
+                <li class="footer__main-item"><h3>SUPPORT</h3></li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Help center</a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Shipping information</a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Contact us</a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Log in / Sign up</a>
+                </li>
+              </ul>
+              <ul class="footer__main-list">
+                <li class="footer__main-item"><h3>EXPLORE</h3></li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Our Story</a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Hismile Research</a>
+                </li>
+
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Hismile Professional</a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Terms and Conditions</a>
+                </li>
+                <li class="footer__main-item">
+                  <a href="#" class="footer__main-link">Privacy Policy</a>
+                </li>
+              </ul>
+              <ul class="footer__main-list">
+                <h3 class="footer__main-item">SOCIAL MEDIA</h3>
+                <div class="footer__social-icons">
+                  <a href="#">
+                    <img src="icons/facebook (1).png" alt="facebook png" />
+                  </a>
+                  <a href="#">
+                    <img src="icons/linkedin.png" alt="linkedin png" />
+                  </a>
+                  <a href="#">
+                    <img src="icons/instagram (1).png" alt="instagram png" />
+                  </a>
+                  <a href="#">
+                    <img src="icons/youtube (1).png" alt="youtube png" />
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <!-- payment -->
+          <div class="row">
+            <div class="footer__payment">
+              <p class="products__card-para">
+                &copy; Hismile Pvt Ltd. All Rights Reserved.
+              </p>
+              <div class="footer__icons">
+                <img src="icons/visa.png" alt="visa icon" />
+                <img src="icons/mastercard.png" alt="master card icon" />
+                <img src="icons/blik.png" alt="blik icon" />
+                <img src="icons/Stripe.png" alt="stripe icon" />
+                <img src="icons/przelewy.png" alt="przelewy icon" />
+                <img src="icons/gpay.png" alt="gpay icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- end of footer -->
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
